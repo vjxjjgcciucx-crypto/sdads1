@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071b16">
+<title>قناة ليبيا للعمل أمينة</title>
+<meta name="description" content="انضم إلى قناة ليبيا للعمل أمينة وتعرّف على الحياة المالية وفق مبادئ الشريعة الإسلامية وطرق تحقيق الربح دون مخالفة المبادئ.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #071b16;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 18px;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(194,153,65,.17), transparent 45%),
+      radial-gradient(circle at 5% 85%, rgba(19,111,75,.17), transparent 35%),
+      #071b16;
+}
+
+.glow {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: rgba(201,158,68,.10);
+    filter: blur(90px);
+    pointer-events: none;
+}
+
+.glow.one {
+    top: 5%;
+    right: -120px;
+}
+
+.glow.two {
+    bottom: 0;
+    left: -120px;
+    background: rgba(21,145,93,.13);
+}
+
+.container {
+    width: 100%;
+    max-width: 490px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    animation: appear .9s ease both;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.logo-wrap {
+    width: 112px;
+    height: 112px;
+    margin: 0 auto 19px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f6d98b, #b9872c, #f8e6b2);
+    box-shadow: 0 0 35px rgba(218,175,86,.22);
+}
+
+.logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.brand {
+    color: #f0d28b;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: .2px;
+    margin-bottom: 24px;
+}
+
+.tag {
+    display: inline-block;
+    color: #f3d99c;
+    background: rgba(207,164,79,.10);
+    border: 1px solid rgba(207,164,79,.35);
+    border-radius: 30px;
+    padding: 7px 17px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+h1 {
+    color: #fff;
+    font-size: clamp(27px, 7vw, 37px);
+    font-weight: 900;
+    line-height: 1.65;
+    margin-bottom: 13px;
+}
+
+h1 span {
+    color: #e9c879;
+}
+
+.subtitle {
+    color: #d5ded8;
+    font-size: 15px;
+    line-height: 2.1;
+    font-weight: 500;
+    max-width: 420px;
+    margin: 0 auto 24px;
+}
+
+.feature-card {
+    text-align: right;
+    background: linear-gradient(145deg, rgba(255,255,255,.075), rgba(255,255,255,.025));
+    border: 1px solid rgba(231,199,127,.20);
+    border-radius: 18px;
+    padding: 18px 20px;
+    margin: 0 auto 25px;
+}
+
+.feature-title {
+    color: #f0d28b;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 11px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #e4eae5;
+    font-size: 13px;
+    line-height: 1.9;
+    margin: 8px 0;
+}
+
+.check {
+    color: #e9c879;
+    font-size: 17px;
+    font-weight: 900;
+    flex-shrink: 0;
+}
+
+.join-btn {
+    width: 100%;
+    min-height: 59px;
+    border: 0;
+    border-radius: 14px;
+    background: linear-gradient(110deg, #e4bd68, #f5dda0, #d4a94f);
+    color: #14251b;
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 9px 30px rgba(218,177,87,.25);
+    animation: pulse 2s infinite;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.join-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(218,177,87,.42);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(228,189,104,.35), 0 9px 30px rgba(218,177,87,.22);
+    }
+    50% {
+        box-shadow: 0 0 0 9px rgba(228,189,104,0), 0 9px 35px rgba(218,177,87,.38);
+    }
+}
+
+.telegram-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.note {
+    color: #9eafa5;
+    font-size: 11px;
+    margin-top: 13px;
+    line-height: 1.8;
+}
+
+.divider {
+    width: 65px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d9b45f, transparent);
+    margin: 25px auto;
+}
+
+.footer {
+    color: #aebdb4;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.footer a {
+    color: #e7c77f;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 380px) {
+    .page {
+        padding: 30px 14px;
+    }
+
+    .logo-wrap {
+        width: 94px;
+        height: 94px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .feature-card {
+        padding: 15px;
+    }
+
+    .join-btn {
+        font-size: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="page">
+    <div class="glow one"></div>
+    <div class="glow two"></div>
+
+    <section class="container">
+
+        <div class="logo-wrap">
+            <img
+              src="https://plain-apac-prod-public.komododecks.com/202611/01/3x8UBptRGFBzjyq49n3i/image.jpg"
+              alt="شعار قناة ليبيا للعمل أمينة"
+            >
+        </div>
+
+        <div class="brand">قناة ليبيا للعمل أمينة</div>
+
+        <div class="tag">✨ المعرفة المالية وفق مبادئ الشريعة</div>
+
+        <h1>
+            حياة مالية<br>
+            <span>قائمة على الشريعة</span>
+        </h1>
+
+        <p class="subtitle">
+            تعرّف على مفاهيم العمل والربح وفق المبادئ الإسلامية،
+            واكتشف أفكاراً تساعدك على فهم الفرص المالية
+            دون مخالفة أحكام الشريعة.
+        </p>
+
+        <div class="feature-card">
+            <div class="feature-title">ماذا ستجد في قناتنا؟</div>
+
+            <div class="feature">
+                <span class="check">✓</span>
+                <span>معلومات وأفكار حول العمل والفرص المالية</span>
+            </div>
+
+            <div class="feature">
+                <span class="check">✓</span>
+                <span>التعرّف على مبادئ المعاملات المالية الإسلامية</span>
+            </div>
+
+            <div class="feature">
+                <span class="check">✓</span>
+                <span>محتوى يساعدك على فهم طرق الربح الحلال</span>
+            </div>
+        </div>
+
+        <a class="join-btn"
+           href="https://t.me/+QyEoSrUbgJ9kNDNk"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <svg class="telegram-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M21.8 3.2c-.3-.3-.8-.4-1.3-.2L2.6 9.9c-.8.3-.8 1.5.1 1.8l4.6 1.5 1.8 5.5c.3.8 1.3 1 1.8.3l2.6-3.3 4.6 3.4c.6.4 1.4.1 1.5-.6l3-14.1c.1-.5-.1-.9-.5-1.2zM9 12.8l8.9-5.6-7.1 7.1-.3 3.1L9 12.8z"/>
+            </svg>
+
+            انضم إلى القناة الآن
+        </a>
+
+        <p class="note">
+            اضغط على الزر أعلاه للانتقال مباشرة إلى قناة Telegram
+        </p>
+
+        <div class="divider"></div>
+
+        <div class="footer">
+            <div>للتواصل والاستفسارات</div>
+            <a href="mailto:alipaemaill@gmail.com">
+                alipaemaill@gmail.com
+            </a>
+            <div style="margin-top:12px;">
+                © قناة ليبيا للعمل أمينة
+            </div>
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>
